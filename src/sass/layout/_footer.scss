@@ -1,0 +1,57 @@
+@use "../abstracts/variables" as *;
+
+/* Footer */
+.footer {
+  padding-top: 50px;
+}
+
+.social {
+  text-align: center;
+  &__media {
+    border: 1px solid hsla(0, 0%, 30%, 0.2);
+    border-radius: 50%;
+    color: $primaryColor;
+    display: inline-block;
+    padding: 6px;
+    margin: 0 4px;
+
+    &--hover:hover {
+      background-color: $primaryColor;
+      color: $secondaryColor;
+      cursor: pointer;
+      transition: all 1s ease;
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: $secondaryAlternativeColor;
+  text-decoration: overline;
+}
+
+.rights {
+  font-size: 12px;
+  margin: 32px;
+  opacity: 0.5;
+  text-align: center;
+}
+
+/* This is for fixing facebook width so they all match. */
+.fixing-width {
+  width: 34px;
+}
+
+.fa-facebook-f {
+  border: none;
+  border-radius: 0;
+  padding: 0;
+}

@@ -1,0 +1,18 @@
+@mixin placeholder($opacity) {
+
+    /* Edge */
+    opacity: $opacity;
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    opacity: $opacity;
+  }
+
+  ::placeholder {
+    opacity: $opacity;
+  }
+}
+
+input::placeholder {
+  @include placeholder(0.3);
+}

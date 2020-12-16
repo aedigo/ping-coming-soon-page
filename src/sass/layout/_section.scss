@@ -1,0 +1,85 @@
+@use "../abstracts/variables" as *;
+
+/* Section */
+.section {
+  margin-bottom: 30px;
+}
+
+.message {
+  text-align: center;
+  margin-bottom: 32px;
+  &__main-text {
+    font-size: 24px;
+    margin-bottom: 24px;
+    &__first {
+      opacity: 0.6;
+    }
+  }
+  &__subscribe {
+    font-size: 14px;
+  }
+}
+
+.form {
+  &__email {
+    border: solid 1px hsla(223, 100%, 88%, 0.4);
+
+    &:invalid {
+     box-shadow:none;
+    }
+    
+    &--focus:focus {
+      outline: none;
+      border: solid 2px $secondaryColor;
+      transition: border .1s ease;
+    }
+    &__input-error {
+      border: solid 1px $secondaryAlternativeColor;
+      opacity: .7;
+    }
+  }
+
+  &__btn {
+    background-color: $primaryColor;
+    border: none;
+    box-shadow: 0 6px 10px $secondaryColor;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 12px;
+
+    &--hover:hover {
+      background-color: #fff;
+      color: $primaryColor;
+      cursor: pointer;
+      transition: all 1s ease;
+    }
+  }
+
+  &__error {
+    color: $secondaryAlternativeColor;
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+    margin: 8px 0 24px 0;
+  }
+
+  &__sucess {
+    color: $primaryColor;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+    margin: 8px 0 24px 0;
+
+    &--animation {
+      animation-name: disappear;
+      animation-duration: 3s;
+    }
+  }
+}
+
+@keyframes disappear {
+  0% {opacity: 0;}
+  20% {opacity: 1;}
+  75% {opacity: 1;}
+  100% {opacity: 0;}
+}

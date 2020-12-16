@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+input::placeholder {
+  /* Edge */
+  opacity: 0.3;
+}
+input::placeholder :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  opacity: 0.3;
+}
+input::placeholder ::placeholder {
+  opacity: 0.3;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.u-blue {
+  color: #4f7df3;
+}
+
+.u-bold {
+  font-weight: 700;
+}
+
+.u-container {
+  max-width: 960px;
+  padding: 32px;
+  margin: auto;
+}
+
+.u-shape {
+  border-radius: 26px;
+  display: block;
+  padding: 14px 30px;
+  margin: auto;
+  width: 90%;
+}
+
+button {
+  display: block;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+html,
+body {
+  font-size: 20px;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+/* Header */
+.header {
+  margin-bottom: -30px;
+}
+
+.logo {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Section */
+.section {
+  margin-bottom: 30px;
+}
+
+.message {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.message__main-text {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+.message__main-text__first {
+  opacity: 0.6;
+}
+.message__subscribe {
+  font-size: 14px;
+}
+
+.form__email {
+  border: solid 1px rgba(194, 211, 255, 0.4);
+}
+.form__email:invalid {
+  box-shadow: none;
+}
+.form__email--focus:focus {
+  outline: none;
+  border: solid 2px #c2d3ff;
+  transition: border 0.1s ease;
+}
+.form__email__input-error {
+  border: solid 1px #ff5263;
+  opacity: 0.7;
+}
+.form__btn {
+  background-color: #4f7df3;
+  border: none;
+  box-shadow: 0 6px 10px #c2d3ff;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 12px;
+}
+.form__btn--hover:hover {
+  background-color: #fff;
+  color: #4f7df3;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.form__error {
+  color: #ff5263;
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+  margin: 8px 0 24px 0;
+}
+.form__sucess {
+  color: #4f7df3;
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+  margin: 8px 0 24px 0;
+}
+.form__sucess--animation {
+  animation-name: disappear;
+  animation-duration: 3s;
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* Footer */
+.footer {
+  padding-top: 50px;
+}
+
+.social {
+  text-align: center;
+}
+.social__media {
+  border: 1px solid rgba(77, 77, 77, 0.2);
+  border-radius: 50%;
+  color: #4f7df3;
+  display: inline-block;
+  padding: 6px;
+  margin: 0 4px;
+}
+.social__media--hover:hover {
+  background-color: #4f7df3;
+  color: #c2d3ff;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: #ff5263;
+  text-decoration: overline;
+}
+
+.rights {
+  font-size: 12px;
+  margin: 32px;
+  opacity: 0.5;
+  text-align: center;
+}
+
+/* This is for fixing facebook width so they all match. */
+.fixing-width {
+  width: 34px;
+}
+
+.fa-facebook-f {
+  border: none;
+  border-radius: 0;
+  padding: 0;
+}
+
+/* Reponsive */
+@media only screen and (max-width: 335px) {
+  .message__main-text {
+    font-size: 20px;
+  }
+  .message__subscribe {
+    font-size: 10px;
+  }
+
+  .form__email {
+    font-size: 16px;
+  }
+
+  ::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+
+  ::-moz-placeholder {
+    font-size: 12px;
+  }
+
+  /* firefox 19+ */
+  :-ms-input-placeholder {
+    font-size: 12px;
+  }
+
+  /* ie */
+  input:-moz-placeholder {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  .u-container {
+    max-width: 500px;
+  }
+
+  .header {
+    margin-top: 30px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .message__main-text span {
+    font-size: 20px;
+  }
+  .message__subscribe {
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .u-container {
+    padding: 36px 64px;
+    max-width: 620px;
+  }
+
+  .header {
+    margin-top: 30px;
+  }
+
+  .message__main-text span {
+    font-size: 32px;
+  }
+  .message__subscribe {
+    font-size: 16px;
+  }
+
+  .form {
+    display: grid;
+    grid-template-columns: 3fr auto;
+    column-gap: 8px;
+  }
+  .form__email, .form__btn {
+    margin: 0;
+    width: initial;
+  }
+  .form__error, .form__sucess {
+    grid-row: 2;
+    margin-left: 26px;
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .u-container {
+    padding: 36px 64px;
+    max-width: 768px;
+  }
+
+  .section {
+    margin-bottom: 0;
+  }
+
+  .message__main-text span {
+    font-size: 42px;
+  }
+  .message__subscribe {
+    font-size: 16px;
+    opacity: 0.7;
+  }
+
+  .form {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 8px;
+  }
+  .form__email, .form__btn {
+    margin: 0;
+    width: initial;
+  }
+  .form__error, .form__sucess {
+    grid-row: 2;
+    margin-left: 32px;
+    text-align: left;
+  }
+}
+
+/*# sourceMappingURL=layout.css.map */

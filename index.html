@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/f2626d497e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Frontend Mentor | Ping coming soon page" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="toBe" />
+    <meta property="og:image" content="toBe" />
+    <meta name="description" content="Subscribe to Ping! When's ready, you will be notified.">
+    <meta name="keywords" content="Ping, Subscribe">
+    <meta name="author" content="Rodrigo">
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="public/css/layout.css" />
+
+    <title>Frontend Mentor | Ping coming soon page</title>
+    
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+          </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="u-container">
+        <h1 class="logo u-bold">PING<span class="u-blue">.</span></h1>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="u-container">
+        <div class="message">
+          <div class="message__main-text">
+            <span class="message__main-text__first">We are launching</span>
+            <span class="massage__main-text__last u-bold">soon!</span>
+          </div>
+          <p class="message__subscribe">Subscribe and get notified</p>
+        </div>
+
+        <form class="form" action="/">
+          <input
+            id="email"
+            class="form__email form__email--focus u-shape"
+            type="email"
+            placeholder="Your email adress..."
+            aria-required="true"
+          />
+          <button type="button" id="cta" class="form__btn form__btn--hover u-shape">Notify Me</button>
+        </form>
+      </div>
+
+      <div class="u-container">
+        <img
+          class="img"
+          src="public/images/illustration-dashboard.png"
+          alt="Illustration Dashboard"
+        />
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="u-container">
+        <div class="social">
+          <div class="fixing-width social__media social__media--hover">
+            <i class="fa-sm fab fa-facebook-f"></i>
+          </div>
+
+          <div class="fixing-width social__media social__media--hover">
+            <i class="fa-sm fab fa-twitter"></i>
+          </div>
+
+          <div class="fixing-width social__media social__media--hover">
+            <i class="fa-sm fab fa-instagram"></i>
+          </div>
+        </div>
+
+        <p class="rights">&copy; Copyright All rights reserved.</p>
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a target="_blank" href="https://github.com/aedigo">Rodrigo</a>.
+        </p>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="public/js/main.js"></script>
+  </body>
+</html>
